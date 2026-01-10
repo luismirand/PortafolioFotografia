@@ -1,7 +1,5 @@
 # Dynamic Photography Portfolio | Headless CMS via Google Sheets
 
-![Project Banner](https://via.placeholder.com/1200x400?text=Portfolio+Preview)
-
 > Una solución de portafolio web de alto rendimiento, autoadministrable y sin costes de servidor, diseñada para profesionales visuales que requieren flexibilidad y diseño sin barreras técnicas.
 
 ## 📋 Descripción del Proyecto
