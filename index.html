@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portafolio Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+    <header class="mobile-header">
+        <div class="mobile-brand" id="mobile-brand">CARGANDO...</div>
+        <button class="menu-toggle" id="menu-btn" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <button class="close-menu" id="close-menu-btn">&times;</button>
+        
+        <div class="sidebar-content">
+            <div class="brand">
+                <h2 id="sidebar-name">PORTAFOLIO</h2>
+                <span class="subtitle" id="sidebar-role">PHOTOGRAPHY</span>
+            </div>
+            
+            <ul class="menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#producciones" class="nav-link">Producciones</a></li>
+                <li><a href="#fotografia" class="nav-link">Fotografía</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#edicion" class="nav-link">Edición</a></li>
+                <li><a href="#community" class="nav-link">Community Manager</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="socials">
+                    <a href="#" id="social-ig" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" id="social-li" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <main class="content">
+        
+        <section id="home" class="section scroll-spy-target">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <img src="" alt="Perfil" id="bio-img" style="display:none;"> 
+                </div>
+                <div class="bio-text">
+                    <h1 id="bio-name">Cargando...</h1>
+                    <h3 id="bio-role-hero"></h3>
+                    <p id="bio-desc"></p>
+                    <div class="bio-actions">
+                        <a href="#contacto" id="bio-btn" class="btn-primary">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="producciones" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Producciones</h2>
+                <p>Dirección de arte y proyectos audiovisuales</p>
+            </div>
+            <div class="grid-masonry" id="producciones-grid"></div>
+        </section>
+
+        <section id="fotografia" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Fotografía</h2>
+                <p>Captura de momentos, editorial y retrato</p>
+            </div>
+            <div class="grid-masonry" id="fotografia-grid"></div>
+        </section>
+
+        <section id="eventos" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Eventos</h2>
+            </div>
+            <div class="grid-masonry" id="eventos-grid"></div>
+        </section>
+
+        <section id="edicion" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Edición</h2>
+            </div>
+            <div class="grid-masonry" id="edicion-grid"></div>
+        </section>
+
+        <section id="community" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Community Manager</h2>
+            </div>
+            <div class="grid-masonry" id="community-grid"></div>
+        </section>
+
+        <section id="contacto" class="section scroll-spy-target">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Hablemos de tu próximo proyecto</p>
+            </div>
+            <div class="contact-grid" id="contact-list"></div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-wrapper">
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
